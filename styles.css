@@ -1,0 +1,297 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(#60695E, #000000);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.whiteBackground {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  background-color: #DCDCDC;
+  box-shadow: 0rem 1rem 2rem black;
+  z-index: 1;
+}
+
+.sixRectangles {
+  background-color: #918C6F;
+  height: 3.5rem;
+  position: relative;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+
+#rectangle1 {
+  width: 50%;
+}
+
+#rectangle2 {
+  width: 50%;
+  left: 50%;
+}
+
+#rectangle3 {
+  width: 50%;
+}
+
+#rectangle4 {
+  width: 50%;
+  left: 50%;
+}
+
+#rectangle5 {
+  width: 50%;
+}
+
+#rectangle6 {
+  width: 50%;
+  left: 50%;
+}
+
+.mainQuote {
+  font-family: 'Klee One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+}
+
+.leftSide {
+  right: 0;
+}
+
+#mainPicture {
+  position: absolute;
+  top: 1rem;
+  right: 33%;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Reggae One', cursive;
+  text-align: center;
+  position: relative;
+  margin-top: 4rem;
+  z-index: 4;
+  color: #E0D3C3;
+  font-size: 2.5rem;
+  text-shadow: 0rem 1rem 1rem black;
+}
+
+.quotesContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #A09C85;
+  position: relative;
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+  margin-bottom: 4rem;
+  z-index: 6;
+  border-radius: 5rem;
+  box-shadow: inset 0 0 4rem black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.modified1 {
+  background-color: #918C6F;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+  align-items: center;
+  z-index: 7;
+  display: inline-flex;
+}
+
+.modified2 {
+  background-color: #918C6F;
+  height: 3.5rem;
+  position: fixed;
+  top: 3.5rem;
+  opacity: 0.8;
+  align-items: center;
+  z-index: 7;
+  display: inline-flex;
+}
+
+.modified3 {
+  background-color: #918C6F;
+  height: 3.5rem;
+  position: fixed;
+  top: 7rem;
+  opacity: 0.8;
+  align-items: center;
+  z-index: 7;
+  display: inline-flex;
+}
+
+.pagesContainer {
+  display: flex;
+  gap: 0.3rem;
+  position: relative;
+  top: 4rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.pages {
+  background-color: #DCDCDC;
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.pages:hover {
+  background-color: white;
+}
+
+.leftPage {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.rightPage {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.quotesUL {
+  margin-top: 8rem;
+}
+
+
+.quote {
+  display: flex;
+  position: relative;
+  width: 60rem;
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding-right: 2rem;
+}
+
+.darkLeftSide {
+  position: relative;
+  width: 7rem;
+  font-family: 'Reggae One', cursive;
+  background-color: #272C26;
+  color: white;
+  font-size: 2.5rem;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.darkLeftSide:hover {
+  background-color: black;
+}
+
+
+
+
+.mainSide {
+  position: relative;
+  width: 53rem;
+  background-color: #DCDCDC;
+  display: flex;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem rgb(98, 98, 98);
+  z-index: 2;
+}
+
+
+.quotesContainer::before {
+  content: "";
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  background: radial-gradient(70rem circle at var(--mouse-x) var(--mouse-y), #e1ddc5, transparent 30%);
+}
+
+
+
+.originalQuote {
+  font-family: 'Klee One', cursive;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: black;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  z-index: 9;
+}
+
+.voiceSVG {
+  width: 5%;
+  height: auto;
+  margin-left: 1rem;
+  cursor: pointer;
+  z-index: 8;
+}
+
+a:hover {
+  color: rgb(154, 56, 56);
+}
+
+.englishLine {
+  font-family: 'Qwigley', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #272C26;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  z-index: 9;
+}
+
+
+audio {
+  display: none;
+}
+
+.soundON {
+  filter: invert(21%) sepia(80%) saturate(1352%) hue-rotate(10deg) brightness(119%) contrast(119%);
+  width: 5%;
+  height: auto;
+  margin-left: 1rem;
+  cursor: pointer;
+  z-index: 8;
+}
